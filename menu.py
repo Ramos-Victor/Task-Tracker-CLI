@@ -1,5 +1,7 @@
 from actions import createTask, exitCLI, listAllTasks
 
+
+#MENU OPTIONS STORED IN TUPLES
 MENU_OPTIONS = {
     "1": ("Create task", createTask),
     "2": ("List all tasks", listAllTasks),
