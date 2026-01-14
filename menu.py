@@ -1,7 +1,8 @@
-from actions import createTask, exitCLI
+from actions import createTask, exitCLI, listAllTasks
 
 MENU_OPTIONS = {
     "1": ("Create task", createTask),
+    "2": ("List all tasks", listAllTasks),
     "0": ("Exit", exitCLI)
 }
 
@@ -15,4 +16,4 @@ def execute_options(opcao):
     if action:
         action[1]()
     else:
-        print("Opção inválida!")
+        print("Invalid option!")
