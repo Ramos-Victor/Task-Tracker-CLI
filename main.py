@@ -1,19 +1,19 @@
 #IMPORT JSON AND OS LIBRARY
 import os
 
-from actions import makeData
+from actions import make_data
 from menu import show_menu, execute_options
 
-ARQUIVO = "banco.json"
+FILEPATH = "banco.json"
 
-if not os.path.exists(ARQUIVO):
-    makeData(ARQUIVO)
+if not os.path.exists(FILEPATH):
+    make_data(FILEPATH)
 
 def main():
     while True:
         show_menu()
-        escolha = input("Choose one option: ")
-        execute_options(escolha)
+        option = input("Choose one option: ")
+        execute_options(option)
 
 if __name__ == "__main__":
     main()
