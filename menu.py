@@ -1,10 +1,10 @@
-from actions import create_task, exit_tasks, list_all_tasks, updating_task
+from actions import create_task, exit_tasks, listing_options, updating_task
 
 
 #MENU OPTIONS STORED IN TUPLES
 MENU_OPTIONS = {
     "1": ("Create task", create_task),
-    "2": ("List all tasks", list_all_tasks),
+    "2": ("Listing options", listing_options),
     "3": ("Updating tasks", updating_task),
     "0": ("Exit", exit_tasks)
 }
