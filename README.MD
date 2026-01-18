@@ -7,7 +7,7 @@ All tasks are stored in a **JSON file**, allowing data persistence between execu
 
 ## About the Project
 
-This project was created as part of the **roadmap.sh learning platform**, focused on practicing:
+This project was created as part of the [**roadmap.sh learning platform**](https://roadmap.sh/projects/task-tracker), focused on practicing:
 
 - Python fundamentals  
 - File handling with JSON  
@@ -26,18 +26,6 @@ The goal of the application is to manage tasks efficiently from the terminal.
 - The user interacts with the system through menus  
 - Each task has an ID, description, status, creation date, and update date  
 - Tasks can be filtered by status  
-
----
-
-## Task Status
-
-- `todo` → Task not started  
-- `in-progress` → Task in progress  
-- `done` → Task completed  
-
-When updating a task, the current status is not shown as an option.
-
----
 
 ## Features
 
@@ -58,12 +46,12 @@ When updating a task, the current status is not shown as an option.
 
 ## Project Structure
 
-├── main.py # Application entry point
-├── menu.py # Main menu and option execution
-├── task.py # Create, update and delete tasks
-├── listtask.py # Task listing functions
-├── storage.py # JSON read/write operations
-├── utils.py # Utility functions
+├── main.py # Application entry point <br>
+├── menu.py # Main menu and option execution<br>
+├── task.py # Create, update and delete tasks<br>
+├── listtask.py # Task listing functions<br>
+├── storage.py # JSON read/write operations<br>
+├── utils.py # Utility functions<br>
 └── banco.json # JSON file used as storage
 
 
