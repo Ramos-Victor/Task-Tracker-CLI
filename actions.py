@@ -165,7 +165,7 @@ def updating_task():
 
             return
 
-    print("\033[31mTask não encontrada!\033[0m")
+    print("\033[31mTask not found!\033[0m")
 
 #listing options
 def listing_options():
@@ -286,3 +286,26 @@ def list_all_tasks():
         print("-"*76)
 
     print("="*76 + "\n")
+
+#Delete task
+def delete_task():
+    data = load_data()
+
+    try:
+        selected_task = int(input("Enter the ID of the task you want to delete: "))
+    except ValueError:
+        print("\033[31mInvalid ID!\033[0m")
+        return
+
+    for index, task in enumerate(data["Tasks"]):
+        if task["id"] == selected_task:
+            del data["Tasks"][index]
+
+            for new_id, task in enumerate(data["Tasks"], start=1):
+                task["id"] = new_id
+
+            save_data(data)
+            print("\033[32mTask deleted successfully!\033[0m")
+            return
+
+    print("\033[31mTask not found!\033[0m")
